@@ -22,13 +22,13 @@ dicom2nifti.convert_directory(head_mri_dicom_b0, ".")
 dicom2nifti.convert_directory(head_mri_dicom_b1000, ".")
 
 
-nifti=nib.load("C:/Users/daouiaouissem/OneDrive - Median Technologies SA/601_diff_v100.nii.gz")
+nifti=nib.load("...load data  ")
 print(nifti)
 #accéder à la valeur associée à la clé "qoffset_x"
 nifti.header["qoffset_x"]
 print(nifti.shape) # get the image shape
 print(nifti.header.get_data_shape()) # get the image shape in a different way
-bvals, bvecs = extract_bvalues_and_bvectors_from_nifti("C:/Users/daouiaouissem/OneDrive - Median Technologies SA/601_diff_v100.nii.gz")
+bvals, bvecs = extract_bvalues_and_bvectors_from_nifti(" ... From your DWI volume")
 print(bvals)
 print(bvecs)
 # Accéder aux données de volume
