@@ -31,12 +31,12 @@ def getLargestCC(segmentation):
     return labels_max
 
     
-head_mri_dicom_b0 = Path("C:/Users/daouiaouissem/Downloads/Clef/S72660/S4010")
-head_mri_dicom_b1000 = Path("C:/Users/daouiaouissem/Downloads/Clef/S72660/S6030")
+head_mri_dicom_b0 = Path(" use your path ")
+head_mri_dicom_b1000 = Path(" use your path ")
 dicom2nifti.convert_directory(head_mri_dicom_b0, ".")
 dicom2nifti.convert_directory(head_mri_dicom_b1000, ".")
-nifti_b0=nib.load("C:/Users/daouiaouissem/OneDrive - Median Technologies SA/401_axt2dixon.nii.gz")
-nifti_b1000=nib.load("C:/Users/daouiaouissem/OneDrive - Median Technologies SA/603_ssdiff_b1000.nii.gz")
+nifti_b0=nib.load("load your b0 volume ")
+nifti_b1000=nib.load("load the other b value  ")
 print(nifti_b0)
    # convert to float
 data_b0= nifti_b0.get_fdata().astype(float)
